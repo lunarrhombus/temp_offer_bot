@@ -1,0 +1,25 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Additional styles */
+@import 'additional-styles/utility-patterns.css';
+@import 'additional-styles/theme.css';
+
+@import 'tailwindcss/utilities';
+
+html, body { overflow-x: hidden; }
+
+/* Custom number input spinner styles */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  height: 40px;
+  cursor: pointer;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  background: linear-gradient(to top, transparent 50%, transparent 50%);
+}
+
+input[type="number"]:hover::-webkit-inner-spin-button {
+  background: linear-gradient(to top, #e5e7eb 50%, #f3f4f6 50%);
+}
