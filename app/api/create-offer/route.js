@@ -219,7 +219,7 @@ Submitted: ${new Date().toLocaleString()}
     // Send email to RE Offer Tool team
     const RE Offer ToolEmailOptions = {
       from: process.env.ZOHO_ACCOUNT_EMAIL,
-      to: 'mohamed@RE Offer Tool.net', // Update with actual RE Offer Tool email
+      to: 'waichak.luk@gmail.com', // Update with actual RE Offer Tool email
       subject: `${requestAgentHelp ? '⚠️ [ASSISTANCE NEEDED] ' : ''}New Offer - MLS ${MLS_ID} - ${buyerdata.Buyer1Name}`,
       text: emailContent,
     };
