@@ -45,7 +45,7 @@ export default function OnboardingLayout({
   return (
     <div className="min-h-screen bg-white font-inter">
       {/* Top Progress Bar */}
-      <div className="fixed top-14 left-0 right-0 z-50 bg-white border-b border-zinc-200  ">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-zinc-200    ">
         <div className="h-1.5 bg-zinc-100">
           <div
             className="h-full transition-all duration-500 ease-out"
