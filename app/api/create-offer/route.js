@@ -217,7 +217,7 @@ Submitted: ${new Date().toLocaleString()}
     `.trim();
 
     // Send email to RE Offer Tool team
-    const RE Offer ToolEmailOptions = {
+    const RE_Offer_ToolEmailOptions = {
       from: process.env.ZOHO_ACCOUNT_EMAIL,
       to: 'waichak.luk@gmail.com', // Update with actual RE Offer Tool email
       subject: `${requestAgentHelp ? '⚠️ [ASSISTANCE NEEDED] ' : ''}New Offer - MLS ${MLS_ID} - ${buyerdata.Buyer1Name}`,
@@ -226,10 +226,10 @@ Submitted: ${new Date().toLocaleString()}
 
     // Only add replyTo if buyer email is provided
     if (processedBuyerData.B_Email && processedBuyerData.B_Email.trim() !== '') {
-      RE Offer ToolEmailOptions.replyTo = processedBuyerData.B_Email;
+      RE_Offer_ToolEmailOptions.replyTo = processedBuyerData.B_Email;
     }
 
-    await transporter.sendMail(RE Offer ToolEmailOptions);
+    await transporter.sendMail(RE_Offer_ToolEmailOptions);
 
     // Send confirmation email to buyer (only if email is provided)
     if (processedBuyerData.B_Email && processedBuyerData.B_Email.trim() !== '') {
@@ -270,7 +270,6 @@ The RE Offer Tool Team
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Questions? Reply to this email or call us at (206) 880-0760.
-Visit us at https://RE Offer Tool.com
       `.trim();
 
       await transporter.sendMail({

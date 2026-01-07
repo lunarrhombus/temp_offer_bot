@@ -1,6 +1,6 @@
 import { OfferFormData } from '@/types/offer';
 
-const STORAGE_KEY = 'RE Offer Tool_offer_draft';
+const STORAGE_KEY = 'RE_Offer_Tool_offer_draft';
 
 export const saveOfferDraft = (data: Partial<OfferFormData>): void => {
   try {
