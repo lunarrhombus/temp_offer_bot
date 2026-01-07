@@ -17,7 +17,7 @@ const inter_tight = Inter_Tight({
 })
 
 export const metadata = {
-  title: 'Create Your Offer - Wayber',
+  title: 'Create Your Offer - RE Offer Tool',
   description: 'Generate your real estate offer quickly and easily',
 };
 

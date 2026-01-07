@@ -224,8 +224,8 @@ export default function SuccessPage({ apiResponse }: SuccessPageProps) {
 
             <p className="text-sm text-gray-600">
               You can also reach us at{' '}
-              <a href="mailto:support@wayber.com" className="text-purple-600 hover:underline font-medium">
-                support@wayber.com
+              <a href="mailto:support@RE Offer Tool.com" className="text-purple-600 hover:underline font-medium">
+                support@RE Offer Tool.com
               </a>
               {' '}or call{' '}
               <a href="tel:+12068800760" className="text-purple-600 hover:underline font-medium">

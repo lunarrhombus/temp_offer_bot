@@ -216,27 +216,27 @@ Submitted: ${new Date().toLocaleString()}
 ═══════════════════════════════════════════
     `.trim();
 
-    // Send email to Wayber team
-    const wayberEmailOptions = {
+    // Send email to RE Offer Tool team
+    const RE Offer ToolEmailOptions = {
       from: process.env.ZOHO_ACCOUNT_EMAIL,
-      to: 'mohamed@wayber.net', // Update with actual Wayber email
+      to: 'mohamed@RE Offer Tool.net', // Update with actual RE Offer Tool email
       subject: `${requestAgentHelp ? '⚠️ [ASSISTANCE NEEDED] ' : ''}New Offer - MLS ${MLS_ID} - ${buyerdata.Buyer1Name}`,
       text: emailContent,
     };
 
     // Only add replyTo if buyer email is provided
     if (processedBuyerData.B_Email && processedBuyerData.B_Email.trim() !== '') {
-      wayberEmailOptions.replyTo = processedBuyerData.B_Email;
+      RE Offer ToolEmailOptions.replyTo = processedBuyerData.B_Email;
     }
 
-    await transporter.sendMail(wayberEmailOptions);
+    await transporter.sendMail(RE Offer ToolEmailOptions);
 
     // Send confirmation email to buyer (only if email is provided)
     if (processedBuyerData.B_Email && processedBuyerData.B_Email.trim() !== '') {
       const buyerEmailContent = `
 Hi ${buyerdata.Buyer1Name},
 
-Thank you for submitting your offer through Wayber!
+Thank you for submitting your offer through RE Offer Tool!
 
 We've received your offer for the property (MLS ID: ${MLS_ID}) and our team is reviewing it now.
 
@@ -266,11 +266,11 @@ An agent will reach out to you shortly regarding your request for assistance.
 ` : ''}
 
 Best regards,
-The Wayber Team
+The RE Offer Tool Team
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Questions? Reply to this email or call us at (206) 880-0760.
-Visit us at https://wayber.com
+Visit us at https://RE Offer Tool.com
       `.trim();
 
       await transporter.sendMail({

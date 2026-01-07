@@ -1,6 +1,6 @@
-# Wayber Offer Generator - Standalone Site
+# RE Offer Tool Offer Generator - Standalone Site
 
-This is a standalone version of the Wayber offer generation tool. It allows users to create real estate purchase offers through a step-by-step form process.
+This is a standalone version of the RE Offer Tool offer generation tool. It allows users to create real estate purchase offers through a step-by-step form process.
 
 ## Features
 
@@ -100,4 +100,4 @@ Make sure to configure your environment variables in your deployment platform.
 
 ## License
 
-Proprietary - Wayber
+Proprietary - RE Offer Tool
