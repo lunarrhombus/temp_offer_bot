@@ -55,14 +55,30 @@ export default function OnboardingLayout({
             }}
           />
         </div>
-        <div className="px-6 py-3 flex items-center justify-between max-w-2xl mx-auto">
-          <div className="flex items-center gap-6">
-            <h1 className="text-xl font-inter-tight font-bold text-zinc-900">
-              Create Your Offer
-            </h1>
-            <span className="text-sm text-zinc-500">
-              Step {currentStep} of {totalSteps}
-            </span>
+        <div className="px-6 py-4 flex items-center justify-between max-w-7xl mx-auto">
+          <div className="flex items-center gap-4">
+            {/* Profile Section */}
+            <div className="flex items-center gap-3 pr-4 border-r border-zinc-200">
+              <img
+                src="/profile_pic.jpg"
+                alt="Profile"
+                className="w-10 h-10 rounded-full object-cover ring-2 ring-zinc-200"
+              />
+              <div className="flex flex-col">
+                <span className="text-sm font-semibold text-zinc-900">Jane Smith</span>
+                <span className="text-xs text-zinc-500">(555) 123-4567</span>
+              </div>
+            </div>
+
+            {/* Title Section */}
+            <div className="flex items-center gap-4">
+              <h1 className="text-xl font-inter-tight font-bold text-zinc-900">
+                Create Your Offer
+              </h1>
+              <span className="text-sm text-zinc-500">
+                Step {currentStep} of {totalSteps}
+              </span>
+            </div>
           </div>
         </div>
       </div>

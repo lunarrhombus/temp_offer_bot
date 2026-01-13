@@ -88,7 +88,7 @@ export default function Step2_BuyerInfo({ data = {}, onChange, onAskAI }: Step2P
               id="buyer1_name"
               value={data.Buyer1Name || ''}
               onChange={(e) => updateField('Buyer1Name', e.target.value)}
-              placeholder="e.g., John Smith"
+              placeholder="e.g., Jane Smith"
               className="w-full border border-gray-300 rounded-md px-4 py-3 focus:ring-2 focus:ring-purple-500 focus:border-transparent placeholder:text-gray-400 placeholder:italic"
             />
           </div>
@@ -109,7 +109,7 @@ export default function Step2_BuyerInfo({ data = {}, onChange, onAskAI }: Step2P
               value={data.B_Email || ''}
               onChange={(e) => handleEmailChange(e.target.value)}
               onBlur={handleEmailBlur}
-              placeholder="e.g., john.smith@email.com"
+              placeholder="e.g., jane.smith@email.com"
               className={`w-full border rounded-md px-4 py-3 focus:ring-2 focus:border-transparent placeholder:text-gray-400 placeholder:italic ${
                 emailError && emailTouched
                   ? 'border-red-500 focus:ring-red-500'
